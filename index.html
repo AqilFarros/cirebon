@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        
+        <nav>
+            <div class="logo">
+                <div class="text">
+                    <a href="#">Restaurant</a>
+                    <p>Eat / Save it</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">More</a>
+                <a href="#">Contact us</a>
+            </div>
+
+            <div class="social">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-solid fa-square-phone"></i>
+            </div>
+
+            <div class="box" onclick="nav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="text">
+                <div class="content">
+                    <div class="title">
+                        <h1>Taste the best Indonesian food with <span>Restaurant</span></h1>
+                    </div>
+                    <div class="detail">
+                        <div class="time">
+                            <i class="fa-regular fa-clock">09:00-20:00</i>
+                            <i class="fa-solid fa-location-dot">Cirebon</i>
+                        </div>
+                        <a href="#">Look menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section></section>
+    </main>
+
+    <script>
+        function nav() {
+            document.querySelector(".navigation").classList.toggle("active")
+        }
+    </script>
+</body>
+
+</html>

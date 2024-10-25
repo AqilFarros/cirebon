@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: transparent;
+    color: white;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+header .logo a {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+header .logo p {
+    letter-spacing: 0.01em;
+}
+
+header .navigation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .navigation a {
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+header .navigation a:hover {
+    color: #FFD700;
+}
+
+header .social i {
+    color: #FFD700;
+    margin: 0 5px;
+}
+
+header .social {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+}
+
+.box {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+    header .logo {
+        left: 20%;
+    }
+
+    header .social {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header .navigation {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        top: 0;
+        left: 0;
+        transform: translate(-100%, 0);
+        transition: .5s;
+    }
+
+    .navigation.active {
+        transform: translate(0, 0);
+    }
+
+    header .navigation a {
+        margin: 20px;
+    }
+
+    .box {
+        display: block;
+        margin-right: 5%;
+    }
+}
+
+/* BANNER */
+.banner {
+    background-image: url(asset/background-awal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.banner .text {
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner .text .content {
+    width: 70%;
+}
+
+.banner .text .content .title {
+    font-size: 3em;
+}
+
+.banner .text .content span {
+    color: #FFD700;
+}
+
+.banner .detail {
+    margin-top: 50px;
+}
+
+.banner .detail .time {
+    margin-bottom: 20px;
+}
+
+.banner .detail i {
+    margin-right: 10px;
+}
+
+.banner .detail i::before {
+    color: #FFD700;
+    margin-right: 10px;
+}
+
+.banner .detail a {
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 70px;
+    margin-top: 20px;
+    transition: all .3;
+}
+
+.banner .detail a:hover {
+    border-color: #FFD700;
+    color: #FFD700;
+    letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 810px){
+    .banner .text,
+    .banner .text .content {
+        width: 100%;
+        text-align: center;
+    }
+}
